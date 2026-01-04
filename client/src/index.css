@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-primary: #10b981;
+    --color-primary-content: #ffffff;
+    --color-secondary: #334155;
+    --color-accent: #34d399;
+    --color-accent-content: #0f172a;
+    --color-base-100: #0f172a;
+    --color-base-200: #020617;
+    --color-base-300: #1e293b;
+
+    --sidebar-bg: #020617;
+}
+
+:root {
+    background-color: #020617;
+    color: #f8fafc;
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #020617;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Swiper Custom Styles */
+.testimonials-swiper .swiper-button-next,
+.testimonials-swiper .swiper-button-prev {
+    color: #10B981;
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonials-swiper .swiper-button-next:hover,
+.testimonials-swiper .swiper-button-prev:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.testimonials-swiper .swiper-button-next:after,
+.testimonials-swiper .swiper-button-prev:after {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+    background: #10B981;
+    opacity: 0.3;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
