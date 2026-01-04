@@ -1,0 +1,13 @@
+{
+    "name": "micro-task-platform-root",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && npm run dev",
+        "dev": "cd client && npm run dev",
+        "server": "cd server && npm start",
+        "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+    },
+    "dependencies": {
+        "firebase-tools": "^15.1.0"
+    }
+}
